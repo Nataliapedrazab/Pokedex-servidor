@@ -1,5 +1,4 @@
-const pokemon = require("../models/pokemon")
-const pokemon = require(`../models/pokemon`)
+const pokemon = require('../models/pokemon')
 
 exports.saludoEntrenador = async (req,res)=>{
     try {
@@ -11,6 +10,7 @@ exports.saludoEntrenador = async (req,res)=>{
 
 exports.create = async (req,res)=>{
  try {
+    console.log(req.body)
     const pokemon = new Pokemon(req.body)
     await pokemon.save()
     res.status(201).json(pokemon)

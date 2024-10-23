@@ -1,5 +1,5 @@
 const express = require("express")
-const mongoose = requite("mongoose")
+const mongoose = require("mongoose")
 require("dotenv").config()
 
 const pokemonRoutes = require("./routes/pokemon")
