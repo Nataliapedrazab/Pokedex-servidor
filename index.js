@@ -4,7 +4,6 @@ require("dotenv").config()
 
 const pokemonRoutes = require("./routes/pokemon")
 
-const { default: mongoose } = require("mongoose")
 const app = express()
 const port = 3000
 

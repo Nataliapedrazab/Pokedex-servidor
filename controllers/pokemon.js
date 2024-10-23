@@ -11,7 +11,7 @@ exports.saludoEntrenador = async (req,res)=>{
 
 exports.create = async (req,res)=>{
  try {
-    const pokemon = new pokemon
+    const pokemon = new Pokemon(req.body)
     await pokemon.save()
     res.status(201).json(pokemon)
  } catch (error) {
